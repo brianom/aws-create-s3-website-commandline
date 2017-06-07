@@ -21,8 +21,8 @@ If you got to your [AWS console](https://console.aws.amazon.com/s3) you should n
 
 Create your website files and go to that folder. (you can use my index.html and other files available [here](https://github.com/brianom/aws-create-s3-website-commandline)). You can copy the files one at a time like this:
 
-`$ aws s3 cp index.html s3://seed-site/
-upload: ./index.html to s3://seed-site/index.html`
+`$ aws s3 cp index.html s3://seed-site/`
+`upload: ./index.html to s3://seed-site/index.html`
 
 Or all the files in your folder and sub folders using a recursive copy. The command line parameters I've used tell it to just copy the jpeg and html files I need. I have also made all the files publically available using "--acl public-read"
 
@@ -30,11 +30,11 @@ Or all the files in your folder and sub folders using a recursive copy. The comm
 
 You can verify they have been copied to the remote folder using a remote list.
 
-`$ aws s3 ls s3://seed-site/
-2017-06-07 06:38:29     329903 dead-seed.jpg
-2017-06-07 06:38:29       1608 error.html
-2017-06-07 06:38:29       1587 index.html
-2017-06-07 06:38:29     201254 seed.jpg`
+`$ aws s3 ls s3://seed-site/`
+`2017-06-07 06:38:29     329903 dead-seed.jpg`
+`2017-06-07 06:38:29       1608 error.html`
+`2017-06-07 06:38:29       1587 index.html`
+`2017-06-07 06:38:29     201254 seed.jpg`
 
 Finally to configure this S3 bucket to serve the files as a website, run the following command
 
