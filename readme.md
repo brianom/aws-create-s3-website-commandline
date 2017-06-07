@@ -49,4 +49,4 @@ Finally to configure this S3 bucket to serve the files as a website, run the fol
 
      aws s3 website s3://seed-site/ --index-document index.html --error-document error.html
 
-Ta-Da: https://s3.amazonaws.com/seed-site
+Ta-Da: https://seed-site.s3.amazonaws.com/index.html
