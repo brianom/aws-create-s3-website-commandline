@@ -21,7 +21,7 @@ If you got to your [AWS console](https://console.aws.amazon.com/s3) you should n
 
 Create your website files and go to that folder. (you can use my index.html and other files available [here](https://github.com/brianom/aws-create-s3-website-commandline)). You can copy the files one at a time like this:
 
-> > aws s3 cp index.html s3://seed-site/
+> $ aws s3 cp index.html s3://seed-site/
 > upload: ./index.html to s3://seed-site/index.html
 
 Or all the files in your folder and sub folders using a recursive copy. The command line parameters I've used tell it to just copy the jpeg and html files I need. I have also made all the files publically available using "--acl public-read"
