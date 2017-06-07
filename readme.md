@@ -1,7 +1,7 @@
 
 # How to create and host a website on AWS S3 from the commandline
 
-This short tutorial assumes you have first [downloaded the AWS commandline (CLI)](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) and [set them up with your AWS credentials](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html). One complete you should see a folder called .aws in your home folder, with your credentials in it.
+This short tutorial assumes you have first [downloaded the AWS commandline (CLI) tools](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) and [set it up with your AWS credentials](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html). Once complete you should see a folder called .aws in your home folder, with your credentials in it.
 
 ## Create a S3 bucket
 
@@ -19,10 +19,10 @@ If you got to your [AWS console](https://console.aws.amazon.com/s3) you should n
 
 ![AWS-S3-screenshot](https://github.com/brianom/aws-create-s3-website-commandline/blob/master/images/AWS-S3-screenshot.png)
 
-Create your website files and go to that folder. (you can use my index.html and other files available [here](https://github.com/brianom/aws-create-s3-website-commandline)). You can copy up the files one at a time like this:
+Create your website files and go to that folder. (you can use my index.html and other files available [here](https://github.com/brianom/aws-create-s3-website-commandline)). You can copy the files one at a time like this:
 
-> aws s3 cp index.html s3://seed-site/
->> upload: ./index.html to s3://seed-site/index.html
+> > aws s3 cp index.html s3://seed-site/
+> upload: ./index.html to s3://seed-site/index.html
 
 Or all the files in your folder and sub folders using a recursive copy. The command line parameters I've used tell it to just copy the jpeg and html files I need. I have also made all the files publically available using "--acl public-read"
 
