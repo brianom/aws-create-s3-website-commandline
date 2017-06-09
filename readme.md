@@ -45,10 +45,10 @@ Returns:
 
 # Make it a website
 
-Finally to configure this S3 bucket to serve the files as a website, run the following command
+Finally to configure this S3 bucket to serve the files as a website, run the following command (this becomes more relevant when you have a custom domain)
 
      aws s3 website s3://seed-site/ --index-document index.html --error-document error.html
 
 Ta-Da: https://seed-site.s3.amazonaws.com/index.html
 
-[Next](https://github.com/brianom/aws-create-s3-website-commandline/tree/master/custom-domain) create the site with a custom domain
+[Next](https://github.com/brianom/aws-s3-website-custom-domain) create the site with a custom domain
